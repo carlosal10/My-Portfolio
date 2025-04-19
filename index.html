@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Owuor Timon Odhiambo | Portfolio</title>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #f0f6fc;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 10vh;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #58a6ff;
+    
+    }
+
+    p.tagline {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #c9d1d9;
+    }
+
+    .intro {
+      margin-top: 2rem;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .cta {
+      margin-top: 2.5rem;
+    }
+
+    .cta a {
+      background-color: #238636;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #238636aa;
+      transition: background-color 0.3s ease;
+    }
+    /* Navbar Styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the navbar */
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #00bcd4; /* Neon blue glow on hover */
+  }
+
+    .cta a:hover {
+      background-color: #06e62f;
+    }
+
+    .typing-text {
+  font-size: 1.4rem;
+  color: #00f0ff;
+  border-right: 2px solid #00f0ff;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* ===== Navbar Styling ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.navbar .nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #00bcd4; /* Neon blue glow on hover */
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #111;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .navbar .nav-links li a:hover{
+    color: #00bcd4;}
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Timon</div>
+    
+      <div class="hamburger" id="hamburger">
+        &#9776; <!-- Unicode for hamburger icon -->
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      </nav>
+    
+      <section id="home" class="home-section">
+        <h1>Owuor Timon Odhiambo</h1>
+        <h2 class="typing-text"></h2>
+        <p class="tagline">Instrumentation Engineer | Full-Stack Developer | Transcription Specialist</p>
+        <div class="intro">
+          <p>Welcome to my portfolio. I blend engineering precision, clean code, and linguistic accuracy to deliver solutions that are both technical and impactful.</p>
+        </div>
+        <div class="cta">
+          <a href="Projects.html">View My Work</a>
+        </div>
+      </section>
+  </header>
+
+  <script>document.addEventListener("DOMContentLoaded", function () {
+    const textElement = document.querySelector(".typing-text");
+    const phrases = [
+      "Instrumentation Engineer",
+      "Full-Stack Developer",
+      "Transcription Specialist"
+    ];
+    let i = 0;
+  
+    function typeText() {
+      textElement.style.width = "0"; // reset animation
+      textElement.textContent = phrases[i];
+      i = (i + 1) % phrases.length;
+    }
+  
+    typeText();
+    setInterval(typeText, 4000);
+  });
+  </script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  
+</body>
+</html>
